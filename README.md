@@ -22,7 +22,8 @@ protoc --proto_path=. --micro_out=. --go_out=. userModels.proto
 - 忽略缓冲文件
 `git rm -r --cached .idea `
 
-
+- 删除远程分支
+git push origin --delete main
 
 
  # error 
