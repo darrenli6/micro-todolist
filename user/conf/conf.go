@@ -2,6 +2,7 @@ package conf
 
 import (
 	"fmt"
+	"gopkg.in/ini.v1"
 	"strings"
 	"user/model"
 )
@@ -16,7 +17,9 @@ var (
 )
 
 func Init() {
+
 	file, err := ini.Load("./conf/config.ini")
+
 	if err != nil {
 		fmt.Println("配置文件读取错误，请检查文件路径:", err)
 	}
